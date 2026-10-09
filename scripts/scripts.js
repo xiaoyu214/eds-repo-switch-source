@@ -1,6 +1,4 @@
 import {
-  loadHeader,
-  loadFooter,
   decorateIcons,
   decorateSections,
   decorateBlocks,
@@ -184,7 +182,6 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  loadHeader(doc.querySelector('body > header'));
 
   const main = doc.querySelector('main');
   await loadSections(main);
@@ -193,7 +190,6 @@ async function loadLazy(doc) {
   const element = hash ? doc.getElementById(hash.substring(1)) : false;
   if (hash && element) element.scrollIntoView();
 
-  loadFooter(doc.querySelector('body > footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
@@ -213,5 +209,9 @@ async function loadPage() {
   await loadLazy(document);
   loadDelayed();
 }
+
+const demoCodeVersion = document.createElement('p');
+demoCodeVersion.textContent = 'Code version: source-v1.';
+document.querySelector('main > div')?.append(demoCodeVersion);
 
 loadPage();
