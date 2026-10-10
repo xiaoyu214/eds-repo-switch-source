@@ -181,7 +181,7 @@ async function loadPage() {
 }
 
 const codeVersion = document.createElement('p');
-codeVersion.textContent = 'Code version: source-v1.';
+codeVersion.textContent = 'Code version: target-main-v1.';
 document.querySelector('main > div')?.append(codeVersion);
 
 loadPage();
