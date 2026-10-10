@@ -181,11 +181,11 @@ async function loadPage() {
 }
 
 const codeVersion = document.createElement('p');
-codeVersion.textContent = 'Code version: target-dev-v3.';
+codeVersion.textContent = 'Code version: target-dev-v4.';
 document.querySelector('main > div')?.append(codeVersion);
 
 const updateRecord = document.createElement('p');
-updateRecord.textContent = '第三次修改js记录';
+updateRecord.textContent = '第4次修改js记录';
 document.querySelector('main > div')?.append(updateRecord);
 
 loadPage();
