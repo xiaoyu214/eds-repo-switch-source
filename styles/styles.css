@@ -15,7 +15,7 @@
 
 /* Visible repository migration test styles. */
 body {
-  background-color: #fff6a6;
+  background-color: blue;
   color: #666;
   font-size: 24px;
   line-height: 1.6;
@@ -24,3 +24,4 @@ body {
 main h1 {
   font-size: 48px;
 }
+
