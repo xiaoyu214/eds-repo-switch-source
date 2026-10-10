@@ -24,3 +24,7 @@ body {
 main h1 {
   font-size: 48px;
 }
+
+div {
+  background:red;
+}
